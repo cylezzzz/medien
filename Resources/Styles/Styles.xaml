@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Button Styles -->
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+        <Setter Property="TextColor" Value="{StaticResource White}" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="HeightRequest" Value="48" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <!-- Secondary Button Style -->
+    <Style TargetType="Button" x:Key="SecondaryButton">
+        <Setter Property="BackgroundColor" Value="{StaticResource Secondary}" />
+        <Setter Property="TextColor" Value="{StaticResource Gray900}" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="HeightRequest" Value="48" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <!-- Entry Styles -->
+    <Style TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="{StaticResource White}" />
+        <Setter Property="TextColor" Value="{StaticResource Gray900}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="HeightRequest" Value="48" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource Gray500}" />
+    </Style>
+
+    <!-- Label Styles -->
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Gray900}" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+
+    <!-- Header Label Style -->
+    <Style TargetType="Label" x:Key="HeaderLabel">
+        <Setter Property="TextColor" Value="{StaticResource Gray900}" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+    <!-- Frame Styles -->
+    <Style TargetType="Frame">
+        <Setter Property="BackgroundColor" Value="{StaticResource White}" />
+        <Setter Property="HasShadow" Value="True" />
+        <Setter Property="CornerRadius" Value="12" />
+        <Setter Property="Padding" Value="16" />
+        <Setter Property="BorderColor" Value="{StaticResource Gray200}" />
+    </Style>
+
+    <!-- ContentPage Style -->
+    <Style TargetType="ContentPage">
+        <Setter Property="BackgroundColor" Value="{StaticResource Gray100}" />
+    </Style>
+
+    <!-- CollectionView Item Frame -->
+    <Style TargetType="Frame" x:Key="ItemFrame">
+        <Setter Property="BackgroundColor" Value="{StaticResource White}" />
+        <Setter Property="HasShadow" Value="True" />
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="Padding" Value="12" />
+        <Setter Property="Margin" Value="8,4" />
+        <Setter Property="BorderColor" Value="{StaticResource Gray200}" />
+    </Style>
+
+</ResourceDictionary>

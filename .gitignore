@@ -1,0 +1,28 @@
+﻿# VS/MAUI
+.vs/
+**/bin/
+**/obj/
+*.user
+*.csproj.user
+*.suo
+
+# Android Artefakte
+**/bin/Release/
+**/bin/Debug/
+*.apk
+*.aab
+
+# Backend
+ai-backend/node_modules/
+ai-backend/uploads/
+ai-backend/outputs/
+ai-backend/.env
+ai-backend/*.log
+
+# OS/sonstiges
+Thumbs.db
+*.log
+
+*.binlog
+*.tmp
+*.csproj.user*

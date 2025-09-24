@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AiMediaGenerator.Views.InpaintPage"
+             Title="Inpaint">
+  <ScrollView>
+    <VerticalStackLayout Spacing="12">
+      <Label Text="Inpainting — Bild & Maske wählen, Prompt eingeben." FontAttributes="Bold" FontSize="20"/>
+      <Label x:Name="LimitsLabel" FontSize="12" Opacity="0.85"/>
+      <Image x:Name="Preview" HeightRequest="200" Aspect="AspectFit"/>
+      <Image x:Name="MaskPreview" HeightRequest="200" Aspect="AspectFit"/>
+      <HorizontalStackLayout Spacing="10">
+        <Button Text="Bild wählen" Clicked="OnPickImage"/>
+        <Button Text="Maske wählen" Clicked="OnPickMask"/>
+      </HorizontalStackLayout>
+      <Entry x:Name="PromptEntry" Placeholder="Prompt"/>
+      <Editor x:Name="NegativeEntry" Placeholder="Negative Prompt (optional)" AutoSize="TextChanges" />
+      <Button Text="Inpaint (Cloud)" Clicked="OnInpaint"/>
+      <Label x:Name="StatusLabel" Text="Bereit"/>
+      <Label x:Name="ResultLabel" Text="" />
+    </VerticalStackLayout>
+  </ScrollView>
+</ContentPage>
